@@ -96,6 +96,22 @@ width: 100%;
 .intro-btn:hover{
     background:linear-gradient(0.25turn, hsl(176, 68%, 64%), hsl(176, 68%, 64%));
 }
+@media(min-width:768px){
+    .intro{
+        background: url(../images/bg-curvy-desktop.svg) no-repeat 50% 100%,linear-gradient(hsl(217, 28%, 15%) 100%,hsl(218, 28%, 13%)100%)  ;
+    }
+    .intro-title{
+        font-size: 2.8rem;
+        max-width: 700px;
+        line-height: 4rem;
+        margin-bottom: 3rem;
+    }
+    .intro-text{
+        font-size: 1.5rem;
+        max-width: 700px;
+        line-height: 2.5rem;
+    }
+}
 /*Services3*/
 
 .services-part{
@@ -126,12 +142,18 @@ width: 100%;
     .services-part{
         flex-basis: 50%;
         padding: 0rem 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-part-text{
+        max-width: 400px;
+        line-height: 1.5rem;
     }
     .services-part:last-child{
         margin-bottom: 8rem;
     }
 }
-    
 
 /*CTA*/
 .CTA-img img{
